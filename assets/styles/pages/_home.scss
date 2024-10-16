@@ -1,0 +1,16 @@
+#services {
+  #services-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+
+    .service {
+      height: 100%;
+      padding: 20px;
+      border: 1px solid $color1;
+      text-align: center;
+    }
+  }
+}
