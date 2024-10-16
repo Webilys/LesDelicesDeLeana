@@ -1,6 +1,31 @@
+//fonts
+
+@font-face {
+  font-family: "bukra";
+  src: url(../fonts/29lt-bukra.ttf);
+}
+
+@font-face {
+  font-family: "cardo-regular";
+  src: url(../fonts/Cardo-Regular.ttf);
+}
+
+$font1: "bukra", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+
+$font2: "cardo-regular", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+
 //colors
 
 $color1: #d6b2a1;
+$color2: #d1ab70;
+$color3: #ecefe9;
+$text: #333;
+$black: #000;
+$white: #fff;
+$blackShadow: rgba(0, 0, 0, 0.25);
+$whiteShadow: rgba(255, 255, 255, 0.25);
 
 //general
 
@@ -9,4 +34,54 @@ $color1: #d6b2a1;
   padding: 0;
   box-sizing: border-box;
   user-select: none;
+  font-family: $font1;
+  font-size: 1rem;
+  color: $text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font2;
+  color: $color1;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 30px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  padding-bottom: 20px;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: $text;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
 }

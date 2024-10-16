@@ -1,0 +1,20 @@
+button {
+  border: none;
+  background: none;
+  margin: 30px auto;
+  transition: 0.2s;
+
+  a {
+    border: 1px solid $color1;
+    padding: 10px 20px;
+    color: $color1;
+    transition: 0.2s;
+  }
+  &:hover {
+    transform: scale(1.05);
+    a {
+      background: $color1;
+      color: $white;
+    }
+  }
+}
