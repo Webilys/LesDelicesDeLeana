@@ -76,6 +76,7 @@ button {
 }
 button a {
   border: 1px solid #d6b2a1;
+  border-radius: 3px;
   padding: 10px 20px;
   color: #d6b2a1;
   -webkit-transition: 0.2s;
@@ -86,6 +87,63 @@ button:hover {
           transform: scale(1.05);
 }
 button:hover a {
+  background: #d6b2a1;
+  color: #fff;
+}
+
+header {
+  margin: 20px 50px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header img {
+  width: 100%;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  color: #d6b2a1;
+  padding: 10px 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+header nav ul li a:hover {
+  border: 1px solid #d6b2a1;
+  border-radius: 3px;
+}
+header nav .button {
+  border: none;
+  background: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+header nav .button a {
+  border: 1px solid #d6b2a1;
+  border-radius: 3px;
+  padding: 10px 20px;
+  color: #d6b2a1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+header nav .button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+header nav .button:hover a {
   background: #d6b2a1;
   color: #fff;
 }/*# sourceMappingURL=index.css.map */
