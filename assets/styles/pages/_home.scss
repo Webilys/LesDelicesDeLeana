@@ -84,6 +84,28 @@
   }
 }
 
+#galerie {
+  h2 {
+    text-align: center;
+  }
+
+  #galerie-container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      box-shadow: 0 0 5px $blackShadow;
+      border: 4px double $color1;
+    }
+  }
+}
+
 #a-propos {
   background: url(../img/1.webp) center/cover;
   width: 100%;
@@ -94,11 +116,10 @@
     #about-container {
       display: grid;
       grid-template-columns: 20% 80%;
-      gap: 30px;
       align-items: center;
 
       img {
-        width: 100%;
+        width: 80%;
         box-shadow: 0 0 5px $blackShadow;
         border-radius: 360px;
         border: 4px double $color1;
@@ -121,6 +142,39 @@
         h2 {
           padding-top: 15px;
         }
+      }
+    }
+  }
+}
+
+#temoignages {
+  h2 {
+    text-align: center;
+  }
+
+  #temoignages-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    .temoignage {
+      border: 4px double $color1;
+      padding: 20px;
+      box-shadow: 0 0 5px $blackShadow;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+
+      .quote {
+        color: $color1;
+        font-size: 2rem;
+      }
+
+      .nom-temoignage {
+        color: $color1;
+        font-family: $font2;
+        font-style: italic;
       }
     }
   }
