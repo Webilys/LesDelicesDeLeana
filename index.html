@@ -193,22 +193,51 @@
       </section>
       <section id="contact">
         <h2>Contact</h2>
-        <p>
-          Formulaire de contact : Nom, Email, Message, Type d'événement, Date
-          souhaitée, etc.
-        </p>
+        <div>
+          <form action="">
+            <label for="nom">Nom et prénom</label>
+            <input
+              type="text"
+              name="nom"
+              id="nom"
+              placeholder="Nom et prénom"
+            />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <label for="tel">Téléphone</label>
+            <input type="text" name="tel" id="tel" placeholder="Téléphone" />
+            <label for="type-evenement">Type d'évènement</label>
+            <input
+              type="text"
+              name="type-evenement"
+              id="type-evenement"
+              placeholder="mariage, anniversaire ..."
+            />
+            <label for="date">Date de l'évènement</label>
+            <input type="date" name="date" id="date" />
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Saisissez votre message"
+            ></textarea>
+            <button type="submit">Envoyer</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer>
-      <div class="footer">
-        <div id="coordonnes">
-          <p>
-            Coordonnées : Email, téléphone, adresse physique (si applicable).
-            Liens vers les réseaux sociaux.
-          </p>
-        </div>
-        <p>©2024 | Les délices de Léana | Tous droits réservés.</p>
-        <a href="#">Mentions légales</a>
+      <div id="footer-container">
+        <p id="copyright">
+          ©2024 - <a href="./index.html">Les délices de Léana</a> - Tous droits
+          réservés
+        </p>
+        <p id="mentions">
+          <a href="#">Mentions légales</a>
+          - <a href="#">Politique de confidentialité</a>
+        </p>
       </div>
     </footer>
     <script src="./assets/js/index.js"></script>

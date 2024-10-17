@@ -1,4 +1,33 @@
 footer {
   border-top: 4px double $color1;
   box-shadow: 0 0 5px $blackShadow;
+  padding: 20px 50px;
+
+  #footer-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+    a {
+      transition: 0.2s;
+      &:hover {
+        color: $color1;
+      }
+    }
+
+    #copyright {
+      padding-bottom: 10px;
+      font-size: 0.8rem;
+
+      a {
+        font-size: 0.8rem;
+      }
+    }
+
+    #mentions {
+      a {
+        font-size: 0.7rem;
+      }
+    }
+  }
 }
