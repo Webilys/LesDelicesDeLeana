@@ -32,6 +32,19 @@
 
       button {
         margin-top: 40px;
+        a {
+          background: $color1;
+          color: $white;
+          transition: 0.2s;
+          text-shadow: 0 0 0 transparent;
+        }
+        &:hover {
+          a {
+            border: 1px solid $color1;
+            background: transparent;
+            color: $color1;
+          }
+        }
       }
     }
   }

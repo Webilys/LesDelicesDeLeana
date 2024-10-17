@@ -5,9 +5,8 @@ button {
   transition: 0.2s;
 
   a {
-    border: 1px solid $color1;
-    border-radius: 3px;
-    padding: 10px 20px;
+    border: 3px double $color1;
+    padding: 10px 30px;
     color: $color1;
     transition: 0.2s;
   }
