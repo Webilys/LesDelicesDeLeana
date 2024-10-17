@@ -260,13 +260,6 @@ footer {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
-#a-propos #a-propos-container {
-  text-align: center;
-}
-#a-propos #a-propos-container h2 {
-  color: #fff;
-  text-shadow: 0 0 5px #000;
-}
 #a-propos #a-propos-container #about-container {
   display: grid;
   grid-template-columns: 20% 80%;
@@ -283,23 +276,21 @@ footer {
   border: 4px double #d6b2a1;
   background: rgba(255, 255, 255, 0.9);
 }
-#a-propos #a-propos-container #about-container p {
+#a-propos #a-propos-container #about-container #text-a-propos {
   height: 100%;
   background: rgba(255, 255, 255, 0.9);
   border: 4px double #d6b2a1;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+#a-propos #a-propos-container #about-container #text-a-propos h2,
+#a-propos #a-propos-container #about-container #text-a-propos p {
+  text-align: center;
   text-shadow: 0 0 5px #fff;
+}
+#a-propos #a-propos-container #about-container #text-a-propos h2 {
+  padding-top: 15px;
 }
 
 #blog {

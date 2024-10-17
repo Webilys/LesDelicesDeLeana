@@ -91,13 +91,6 @@
   box-shadow: 0 0 5px $blackShadow;
 
   #a-propos-container {
-    text-align: center;
-
-    h2 {
-      color: $white;
-      text-shadow: 0 0 5px $black;
-    }
-
     #about-container {
       display: grid;
       grid-template-columns: 20% 80%;
@@ -112,16 +105,22 @@
         background: $whiteBg;
       }
 
-      p {
+      #text-a-propos {
         height: 100%;
         background: $whiteBg;
         border: 4px double $color1;
         box-shadow: 0 0 5px $blackShadow;
         padding: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-shadow: 0 0 5px $white;
+
+        h2,
+        p {
+          text-align: center;
+          text-shadow: 0 0 5px $white;
+        }
+
+        h2 {
+          padding-top: 15px;
+        }
       }
     }
   }
