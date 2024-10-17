@@ -1,16 +1,150 @@
+#hero {
+  background: url(../img/hero.webp) center/cover;
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+
+  #hero-container {
+    width: 40%;
+    background: $whiteBg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 4px double $color1;
+    box-shadow: 0 0 5px $blackShadow;
+    text-align: center;
+
+    div {
+      height: 50%;
+
+      h1,
+      h2,
+      p,
+      a {
+        text-shadow: 0 0 5px $white;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      button {
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
 #services {
+  box-shadow: 0 0 5px $blackShadow;
+
   #services-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: start;
     gap: 20px;
+    margin-top: 50px;
 
     .service {
       height: 100%;
       padding: 20px;
-      border: 1px solid $color1;
+      border: 4px double $color1;
       text-align: center;
+      box-shadow: 0 0 5px $blackShadow;
+
+      img {
+        width: 150px;
+        border-radius: 360px;
+        box-shadow: 0 0 5px $blackShadow;
+        border: 4px double $color1;
+        margin-top: -75px;
+        margin-bottom: 30px;
+      }
+
+      p {
+        padding-bottom: 50px;
+      }
+    }
+  }
+}
+
+#a-propos {
+  background: url(../img/1.webp) center/cover;
+  width: 100%;
+  border: 4px double $color1;
+  box-shadow: 0 0 5px $blackShadow;
+
+  #a-propos-container {
+    text-align: center;
+
+    h2 {
+      color: $white;
+      text-shadow: 0 0 5px $black;
+    }
+
+    #about-container {
+      display: grid;
+      grid-template-columns: 20% 80%;
+      gap: 30px;
+      align-items: center;
+
+      img {
+        width: 100%;
+        box-shadow: 0 0 5px $blackShadow;
+        border-radius: 360px;
+        border: 4px double $color1;
+        background: $whiteBg;
+      }
+
+      p {
+        height: 100%;
+        background: $whiteBg;
+        border: 4px double $color1;
+        box-shadow: 0 0 5px $blackShadow;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 0 0 5px $white;
+      }
+    }
+  }
+}
+
+#blog {
+  width: 100%;
+  background: url(../img/blog.webp) center/cover;
+  #articles-container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+
+    h2 {
+      color: $white;
+      text-shadow: 0 0 5px $color1;
+    }
+
+    .article {
+      background: $whiteBg;
+      height: 100%;
+      padding: 20px;
+      border: 4px double $color1;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 0 5px $blackShadow;
+
+      h3,
+      p,
+      a {
+        text-shadow: 0 0 5px $white;
+      }
     }
   }
 }

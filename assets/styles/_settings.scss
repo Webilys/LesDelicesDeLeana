@@ -20,12 +20,13 @@ $font2: "cardo-regular", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 
 $color1: #d6b2a1;
 $color2: #d1ab70;
-$color3: #ecefe9;
+$color3: #e3f1e5;
 $text: #333;
 $black: #000;
 $white: #fff;
 $blackShadow: rgba(0, 0, 0, 0.25);
 $whiteShadow: rgba(255, 255, 255, 0.25);
+$whiteBg: rgba(255, 255, 255, 0.9);
 
 //general
 
@@ -50,7 +51,8 @@ h6 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.2rem;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -82,7 +84,5 @@ a {
 }
 
 section {
-  width: 80%;
-  margin: 0 auto;
-  padding: 50px 0;
+  padding: 50px;
 }

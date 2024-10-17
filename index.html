@@ -6,6 +6,10 @@
       Les délices de Léana | Cake designer | Patisseries et buffets préparés
       pour vos évènements : mariage, baptême, anniversaires, babyshower, etc.
     </title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo_les_delices_de_leana.png"
+    />
     <link rel="stylesheet" href="./assets/styles/index.css" />
   </head>
   <body>
@@ -24,7 +28,7 @@
           <li><a href="#temoignages">Témoignages</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li class="button"><a href="#">Devis</a></li>
+          <li class="button"><a href="#">Je demande mon devis</a></li>
         </ul>
       </nav>
     </header>
@@ -32,12 +36,17 @@
 
     <main>
       <section id="hero">
-        <h1>Les délices de Léana</h1>
-        <h2>Cake Designer</h2>
-        <p>
-          Pour mariages, anniversaires, baby showers, baptêmes et plus encore !
-        </p>
-        <button><a href="#contact">Je demande mon devis</a></button>
+        <div id="hero-container">
+          <div>
+            <h1>Les délices de Léana</h1>
+            <h2>- Cake Designer -</h2>
+            <p>
+              Pour mariages, anniversaires, baby showers, baptêmes et plus
+              encore !
+            </p>
+            <button><a href="#contact">Je demande mon devis</a></button>
+          </div>
+        </div>
       </section>
       <section id="services">
         <div id="services-container">
@@ -45,17 +54,26 @@
             <h2>Services</h2>
           </div>
           <div class="service">
+            <img
+              src="./assets/img/gateau-sur-mesure.webp"
+              alt="Gâteaux sur mesure"
+            />
             <h3>Gâteaux sur mesure</h3>
             <p>Anniversaires, mariages, baby showers, baptêmes, etc.</p>
           </div>
           <div class="service">
-            <h3>Buffets Apéro Dînatoires</h3>
+            <img src="./assets/img/buffet.webp" alt="Buffet" />
+            <h3>Buffets</h3>
             <p>
               Buffets de mariage, d'évènements privés, comités d'entreprises,
               etc.
             </p>
           </div>
           <div class="service">
+            <img
+              src="./assets/img/autres-services.webp"
+              alt="Autres services"
+            />
             <h3>Autres services</h3>
             <p>Personnalisation de desserts, ateliers de pâtisserie, etc.</p>
           </div>
@@ -70,17 +88,29 @@
         </p>
       </section>
       <section id="a-propos">
-        <h2>À propos</h2>
-        <p>
-          Les Délices de Léana est votre partenaire pour toutes vos occasions
-          spéciales avec des gâteaux faits sur mesure.
-          <br /><br />
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
-          blanditiis veniam doloremque tempore, dolore delectus excepturi
-          adipisci officia quasi corrupti rerum iste cumque recusandae quas
-          accusamus dignissimos? Cum, amet. Impedit blanditiis ab, veniam rem et
-          distinctio officiis neque. Ducimus, natus?
-        </p>
+        <div id="a-propos-container">
+          <h2>À propos</h2>
+          <div id="about-container">
+            <div>
+              <img
+                src="./assets/img/logo_les_delices_de_leana.png"
+                alt="Logo Les délices de Léana"
+              />
+            </div>
+            <div>
+              <p>
+                Les Délices de Léana est votre partenaire pour toutes vos
+                occasions spéciales avec des gâteaux faits sur mesure.
+                <br /><br />
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
+                blanditiis veniam doloremque tempore, dolore delectus excepturi
+                adipisci officia quasi corrupti rerum iste cumque recusandae
+                quas accusamus dignissimos? Cum, amet. Impedit blanditiis ab,
+                veniam rem et distinctio officiis neque. Ducimus, natus?
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="temoignages">
         <h2>Témoignages</h2>
@@ -92,6 +122,7 @@
       </section>
       <section id="blog">
         <div id="articles-container">
+          <h2>Blog</h2>
           <div class="article">
             <h3>Inspirations pour des gâteaux d’anniversaire</h3>
             <p>
