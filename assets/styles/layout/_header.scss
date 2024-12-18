@@ -6,16 +6,61 @@ header {
   grid-template-columns: 10% 90%;
   align-items: center;
 
+  @media screen and (max-width: 990px) {
+    grid-template-columns: 20% 80%;
+  }
+
+  @media screen and (max-width: 500px) {
+    grid-template-columns: 30% 70%;
+  }
+
   img {
     width: 100%;
   }
 
+  .menuIcons {
+    display: none;
+
+    @media screen and (max-width: 990px) {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+    }
+
+    i {
+      color: $color1;
+      font-size: 1.5rem;
+    }
+
+    #closeIcon {
+      display: none;
+    }
+  }
+
   nav {
+    @media screen and (max-width: 990px) {
+      display: none;
+      width: 100%;
+    }
+
     ul {
       display: flex;
       justify-content: space-evenly;
+
+      @media screen and (max-width: 990px) {
+        width: 80vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
       li {
         list-style: none;
+        @media screen and (max-width: 990px) {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
         a {
           color: $color1;
           padding: 10px 20px;
@@ -34,6 +79,10 @@ header {
       border: none;
       background: none;
       transition: 0.2s;
+
+      @media screen and (max-width: 1240px) {
+        display: none;
+      }
 
       a {
         padding: 10px 20px;
